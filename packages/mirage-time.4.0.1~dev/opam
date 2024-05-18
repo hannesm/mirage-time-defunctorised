@@ -23,7 +23,6 @@ depends: [
   "lwt" {>= "4.0.0"}
   "duration"
 ]
-depopts: [ "mirage-runtime" ]
 build: [
   ["dune" "subst"] {dev}
   ["dune" "build" "-p" name "-j" jobs]
