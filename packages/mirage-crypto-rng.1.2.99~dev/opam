@@ -32,5 +32,5 @@ sublibrary)
 """
 x-maintenance-intent: [ "(latest)" ]
 url {
-  src: "git+https://github.com/hannesm/ocaml-tls.git#variants"
+  src: "git+https://github.com/hannesm/mirage-crypto.git#variants"
 }

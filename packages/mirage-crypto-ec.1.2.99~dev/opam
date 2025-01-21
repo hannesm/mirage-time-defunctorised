@@ -52,5 +52,5 @@ dev-repo: "git+https://github.com/mirage/mirage-crypto.git"
 tags: ["org:mirage"]
 x-maintenance-intent: [ "(latest)" ]
 url {
-  src: "git+https://github.com/hannesm/ocaml-tls.git#variants"
+  src: "git+https://github.com/hannesm/mirage-crypto.git#variants"
 }
