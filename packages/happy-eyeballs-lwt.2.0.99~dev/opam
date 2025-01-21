@@ -34,5 +34,5 @@ This uses Lwt and Lwt_unix for side effects.
 """
 x-maintenance-intent: [ "(latest)" ]
 url {
-  src: "git+https://github.com/hannesm/happy-eyeballs.git#variants"
+  src: "git+https://github.com/robur-coop/happy-eyeballs.git#variants"
 }
