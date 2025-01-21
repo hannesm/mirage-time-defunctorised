@@ -1,0 +1,30 @@
+opam-version: "2.0"
+maintainer: "anil@recoil.org"
+authors: ["Anil Madhavapeddy" "Daniel C. Bünzli" "Matthew Gray"]
+license: "ISC"
+tags: "org:mirage"
+homepage: "https://github.com/mirage/mirage-mtime"
+doc: "https://mirage.github.io/mirage-mtime/"
+bug-reports: "https://github.com/mirage/mirage-mtime/issues"
+synopsis: "Libraries and module types for a monotonic clock"
+description: """
+This library implements portable support for an operating system timesource
+that is compatible with the [MirageOS](https://mirageos.org) library interfaces
+found in: <https://github.com/mirage/mirage>
+
+It implements a monotonic timesource since an arbitrary point.
+"""
+depends: [
+  "ocaml" {>= "4.08.0"}
+  "dune" {>= "2.8"}
+  "mtime" {>= "2.0.0"}
+]
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+dev-repo: "git+https://github.com/mirage/mirage-mtime.git"
+url {
+  src: "git+https://github.com/mirage/mirage-mtime.git"
+}
